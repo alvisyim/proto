@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="p5.min.js"></script>
+<script src="p5.dom.js"></script>
+<script src="p5.sound.js"></script>
+<script type="text/javascript">
+
+
+jQuery(function($){
+	$('#result').load('game.html #theScore');
+});
+
+//var playerScore = document.getElementById("result").innerHTML;
+var playerScore = 1234567890;
+document.write("playerScore: "+playerScore);
+
+function setup() {
+  createCanvas(300,50);
+	background(120);
+	textSize(40);
+	text(playerScore,0,height);
+}
+</script>
+</head>
+<body>
+<!--div id="result" style="visibility: hidden"></div-->
+<br><br>result: <div id="result"></div>
+</body>
+</html>
